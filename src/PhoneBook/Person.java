@@ -23,7 +23,13 @@ public class Person {
 		return this.PhoneNumber;
 	}
 	
-	// override 
+	 // Overriding toString() method of Object class. This method is called by the compiler by default when printing an object.
+    @Override
+    public String toString() {
+        return this.Name;
+    }
+	
+	// override equals method of Java objects. This method gets called by the compiler by default when comparing two objects of the same type.
 	@Override
 	public boolean equals(Object o) {
 		if (!(o instanceof Person))
